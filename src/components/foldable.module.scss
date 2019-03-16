@@ -10,8 +10,10 @@
     border-right: 9px solid #152059;
     min-height: 5rem;
     margin-bottom: 0.5rem;
+    padding-right: 10%;
     cursor: pointer;
     color: #464c59;
+    overflow: hidden; // svg float left + p overflow hidden讓文字不wrap到圖片下
 
     &::selection {
       background: none;
@@ -22,16 +24,18 @@
     //   margin: 1%;
     //   transform: translateY(1rem) scale(0.7);
     // }
+  }
 
-    svg {
-      // 變色很容易，調位置很麻煩的箭頭
-      margin: 1%;
-      transform: translateY(1rem) scale(0.7);
-    }
+  svg {
+    // 變色很容易，調位置很麻煩的箭頭
+    margin: 1%;
+    transform: translateY(-1rem) scale(0.7);
+    float: left;
   }
 
   .detail {
     padding-left: calc(52px + 2%); // 52px︰svg的寬度，2%︰margin
+    padding-right: 5%;
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.12rem;

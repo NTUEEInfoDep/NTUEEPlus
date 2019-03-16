@@ -20,8 +20,8 @@ class Foldable extends React.Component {
   render() {
     return (
       <div className={style.foldable}>
+        <Arrow className={this.state.open && style.arrow__clicked} />
         <p className={style.summary} onClick={this.handleClick}>
-          <Arrow className={this.state.open && style.arrow__clicked} />
           {this.summary}
         </p>
         {this.state.open && <p className={style.detail}>{this.detail}</p>}
