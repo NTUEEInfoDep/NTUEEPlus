@@ -52,6 +52,14 @@ module.exports = {
       options: {
         implementation: require('sass') // npm install --save node-sass gatsby-plugin-sass
       }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/ // 讓images裡的svg能直接被import
+        }
+      }
     }
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
