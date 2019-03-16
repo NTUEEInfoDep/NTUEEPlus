@@ -23,14 +23,15 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
+    // 用graphql拿到所有markdown的path以及html Abstract syntax tree
     if (result.errors) {
       throw result.errors; // 如果出錯直接丟出Error
     }
 
     result.data.allMarkdownRemark.edges.forEach(edge => {
       createPage({
-        path: `${edge.node.frontmatter.path}`,
-        component: path.resolve('src/templates/article.jsx'), // 用來處理markdown的Component,
+        path: edge.node.frontmatter.path, // 把markdown host在markdown自己提供的path上（沒有檢查重複）（應該）
+        component: path.resolve('src/templates/article.jsx'), // 用來處理markdown的Component
         context: {
           htmlAst: edge.node.htmlAst
           // 要傳給components的prop，可以用來當graphql的argument

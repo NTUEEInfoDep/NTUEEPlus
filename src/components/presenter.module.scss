@@ -1,0 +1,60 @@
+.presenter {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #d6dae0;
+  justify-content: center; // 水平置中
+  padding: 5vh 0;
+  margin-bottom: 10vh;
+  min-height: 65vh; // 用min-height在小視窗才不會炸掉（圖片超出去）
+  border-bottom: 20px solid #8b92a1;
+
+  & > * {
+    // 垂直置中
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .textIntroduction {
+    // 用來放文字介紹的div
+    text-align: left;
+    padding-right: 2%;
+
+    & > p {
+      font-weight: 600;
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+      color: #696d7f;
+      white-space: pre-line; // 把相鄰的空白壓成一個，保留\n
+      margin: 0;
+    }
+
+    & > div {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-bottom: 0;
+
+      @for $i from 1 through 3 {
+        & > *:nth-child(#{$i}) {
+          // 三個<p>字體大小依序減少
+          font-size: 1.9rem + 0.3rem * (3 - $i) * $i;
+        }
+      }
+
+      & > * {
+        font-weight: 900;
+        letter-spacing: 0.3rem;
+        white-space: nowrap; // 不要換行
+        margin-bottom: 0;
+      }
+    }
+
+    & > hr {
+      // border-bottom text-decoration 不能調寬度
+      width: 50%;
+      height: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      border: 2px solid #152059;
+    }
+  }
+}

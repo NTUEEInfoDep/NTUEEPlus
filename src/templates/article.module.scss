@@ -1,0 +1,40 @@
+.article {
+  box-sizing: border-box;
+  text-align: center;
+  color: #152059;
+
+  // rehype react會多放一層<div> QQ
+  & > div {
+    h1 {
+      // 整個文章的標題
+      margin-top: 10vh; // TODO 預留tag的空間
+      font-size: 2.9rem;
+      letter-spacing: 0.2rem;
+      font-weight: bolder;
+    }
+
+    h2 {
+      // 下拉選單的標題
+      width: 45vw; // TODO 寬度太小會爆掉
+      white-space: nowrap;
+      text-align: left;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 5%;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      color: white;
+      background-color: #7bd6ef;
+    }
+
+    blockquote {
+      // 採訪人名單
+      margin: 0;
+      padding-top: 5vh;
+      padding-bottom: 20vh;
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+      background-color: #d6dae0;
+    }
+  }
+}

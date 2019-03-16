@@ -39,16 +39,20 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-unwrap-images', // 把markdown裡面<img>外層多餘的<p>去掉
           {
             resolve: 'gatsby-remark-component',
             options: { components: ['presenter'] } // 在markdown使用react component: https://using-remark.gatsbyjs.org/custom-components/
           }
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-sass', // 使用SASS
+      options: {
+        implementation: require('sass') // npm install --save node-sass gatsby-plugin-sass
+      }
     }
-    // 預計使用的plugin
-    // gatsby-remark-unwrap-image // 把markdown裡面<img>外層多餘的<p>去掉
-    // sass
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

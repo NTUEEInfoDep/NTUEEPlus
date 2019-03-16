@@ -3,7 +3,7 @@ import rehypeReact from 'rehype-react';
 
 import Header from '../components/header';
 import Presenter from '../components/presenter.jsx';
-import style from './article.module.css';
+import style from './article.module.scss';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
