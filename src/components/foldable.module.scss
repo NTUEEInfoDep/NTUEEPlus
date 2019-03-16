@@ -5,10 +5,17 @@
 
   .summary {
     font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
     border-right: 9px solid #152059;
     min-height: 5rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: #464c59;
 
+    &::selection {
+      background: none;
+    }
     // &::before { // 變色比較麻煩，位置比較簡單的箭頭
     //   content: url('../images/Arrow.svg');
     //   display: inline-block;
@@ -26,6 +33,9 @@
   .detail {
     padding-left: calc(52px + 2%); // 52px︰svg的寬度，2%︰margin
     font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.12rem;
+    color: #6f737c;
   }
 }
 

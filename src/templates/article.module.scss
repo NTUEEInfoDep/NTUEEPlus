@@ -7,7 +7,7 @@
   & > div {
     h1 {
       // 整個文章的標題
-      margin-top: 10vh; // TODO 預留tag的空間
+      margin-top: 2vh; // 預留tag的空間
       font-size: 2.9rem;
       letter-spacing: 0.2rem;
       font-weight: bolder;
@@ -42,5 +42,25 @@
       padding-left: 15%;
       padding-right: 15%;
     }
+  }
+}
+
+.tags {
+  margin-top: 5vh的距離; // 跟header的距離
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  & > * {
+    margin: 0.2rem;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; // 從別的地方複製來的
+    letter-spacing: 0.2rem;
+    color: white;
+    background-color: #7bd6ef;
+    border-radius: 0.3rem;
   }
 }
