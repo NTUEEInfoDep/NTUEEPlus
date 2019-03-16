@@ -1,18 +1,17 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby';
+import React from 'react';
 
 const Header = () => (
   <header
     style={{
       background: `#0f2345`,
-      marginBottom: `1.45rem`,
+      marginBottom: `1.45rem`
     }}
   >
     <div
       style={{
         maxWidth: 960,
-        padding: `1.5rem 1.0875rem`,
+        padding: `1.5rem 1.0875rem`
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -20,14 +19,14 @@ const Header = () => (
           to="/"
           style={{
             color: `white`,
-            textDecoration: `none`,
+            textDecoration: `none`
           }}
         >
-          NTUEE<span style={{color: '#00bfdf'}}>+</span>
+          NTUEE<span style={{ color: '#00bfdf' }}>+</span>
         </Link>
       </h1>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;
