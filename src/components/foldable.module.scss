@@ -2,6 +2,7 @@
   text-align: left;
   border-bottom: 2px solid #dbdee3;
   margin-bottom: 1rem;
+  cursor: pointer;
 
   .summary {
     font-size: 1.2rem;
@@ -11,7 +12,6 @@
     min-height: 5rem;
     margin-bottom: 0.5rem;
     padding-right: 10%;
-    cursor: pointer;
     color: #464c59;
     overflow: hidden; // svg float left + p overflow hidden讓文字不wrap到圖片下
 
