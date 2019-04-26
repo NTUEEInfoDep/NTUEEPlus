@@ -24,11 +24,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.1.0",
-<<<<<<< HEAD
     "sass": "^1.19.0"
-=======
-    "sass": "^1.17.3"
->>>>>>> 3cd8fd4eb1463de3ff7828ad630726ca0eda8a61
   },
   "devDependencies": {
     "prettier": "^1.16.4"
