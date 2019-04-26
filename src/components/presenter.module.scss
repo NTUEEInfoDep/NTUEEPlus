@@ -1,6 +1,6 @@
 .presenter {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   background-color: #d6dae0;
   justify-content: center; // 水平置中
   padding: 5vh 0;

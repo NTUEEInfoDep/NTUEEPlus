@@ -15,7 +15,7 @@
 
     h2 {
       // 下拉選單的標題
-      width: 45vw; // TODO 寬度太小會爆掉
+      min-width: 45vw; // TODO 寬度太小會爆掉
       white-space: nowrap;
       text-align: left;
       padding-top: 1%;
