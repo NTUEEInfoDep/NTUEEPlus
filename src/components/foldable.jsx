@@ -6,9 +6,14 @@ import Arrow from '../images/Arrow.svg';
 class Foldable extends React.Component {
   constructor(props) {
     super(props);
-    [this.summary, this.detail] = this.props.children
-      .filter(i => typeof i === 'object') // 拿前兩個傳入的object chilren當作summary和detail
-      .map(i => i.props.children[0]); // 只取那兩個Object的props.children中的第一個東西
+    let first = props.children.findIndex(
+      i => typeof i === 'object' && i.props.children
+    );
+    if (first === -1)
+      throw new Error('No children found, please check your markdown');
+    this.summary = props.children[first];
+    props.children.splice(0, first + 1);
+    this.detail = props.children;
     this.state = { open: false };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -19,10 +24,12 @@ class Foldable extends React.Component {
 
   render() {
     return (
-      <div className={style.foldable} onClick={this.handleClick}>
-        <Arrow className={this.state.open && style.arrow__clicked} />
-        <p className={style.summary}>{this.summary}</p>
-        {this.state.open && <p className={style.detail}>{this.detail}</p>}
+      <div className={style.foldable}>
+        <div style={{ cursor: 'pointer' }} onClick={this.handleClick}>
+          <Arrow className={(this.state.open && style.arrow__clicked) || ''} />
+          <div className={style.summary}>{this.summary}</div>
+        </div>
+        {this.state.open && <div className={style.detail}>{this.detail}</div>}
       </div>
     );
   }

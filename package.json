@@ -16,7 +16,7 @@
     "gatsby-remark-component": "^1.1.3",
     "gatsby-remark-unwrap-images": "^1.0.1",
     "gatsby-source-filesystem": "^2.0.23",
-    "gatsby-transformer-remark": "^2.3.4",
+    "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.15",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
@@ -24,7 +24,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.1.0",
-    "sass": "^1.17.3"
+    "sass": "^1.19.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
