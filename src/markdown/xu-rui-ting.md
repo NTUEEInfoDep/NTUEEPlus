@@ -1,8 +1,9 @@
 ---
 # 這裡是frontmatter
-title: '破壞規則的能力'
-path: 'test' # 實際的網址，在gatsby-node.js用到
+title: 'b80 徐瑞廷採訪'
+path: 'xu-rui-ting' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+quote: '從台大電機畢業以後，當時對我來說最直接的選項就是出國念研究所，就是想出國看看。我希望申請到一流的學校，所以同樣申請電機系所。'
 ---
 
 <!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->

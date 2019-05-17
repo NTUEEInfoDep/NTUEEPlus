@@ -1,8 +1,9 @@
 ---
 # 這裡是frontmatter
-title: 'pei-lun-hsieh'
+title: 'b92 謝沛倫採訪'
 path: 'pei-lun-hsieh' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+quote: 'Disney下面很多不同公司，有做特效、電影或disney world的等等，而disney research就是做很多公司需要的東西，所以做的東西很雜'
 ---
 
 <!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->
