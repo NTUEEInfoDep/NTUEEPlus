@@ -1,12 +1,15 @@
 ---
 # 這裡是frontmatter
-title: 'pei-lun-hsieh'
+title: '【系友專訪】2007級 謝沛倫（Ambidio Inc. 共同創辦人）'
 path: 'pei-lun-hsieh' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2017-04-13' # 文章發布時間
 ---
 
-<!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->
-<!-- children1不能用markdown，但可以用html tag -->
+<!-- https://www.facebook.com/notes/710398462397179/%E3%80%90%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA%E3%80%912007%E7%B4%9A%20%E8%AC%9D%E6%B2%9B%E5%80%AB%EF%BC%88Ambidio%20Inc.%20%E5%85%B1%E5%90%8C%E5%89%B5%E8%BE%A6%E4%BA%BA%EF%BC%89/967600700010286/ -->
+
+# 【系友專訪】2007 級 謝沛倫（Ambidio Inc. 共同創辦人）
+
 <presenter name='謝沛倫' title='b92級系友' src='https://upload.wikimedia.org/wikipedia/zh/5/5f/Original_Doge_meme.jpg'>
     大學︰台灣大學電機系(1991~1994)
     碩士︰哥倫比亞大學電機碩士
@@ -16,9 +19,9 @@ tags: ['#tag1', '#tag2', '測試用的很長的tag']
 
 <!-- 所有li會被換成能夠開關的component，換行很重要 -->
 
-1. Q. 大學的成就？比如說像是創業或是一些特別的專題，從中得到了甚麼深刻的影響，對生涯發展產生了甚麼作用?
+1. Q. 當年學長最喜歡的教授是誰?為什麼呢?
 
-   A. 我必須承認，大學時候的環境對我來說還是相對封閉，我也不知道畢業以後要做什麼、職場的要求是什麼，所以選擇的領域主要是當時學業上比較熱門的話題。大學期間選的專題是比較像無線通訊的，在 90 年代，行動通訊被認為是未來的趨勢。當初選擇的原因只是因為熱門，並沒有太多的想法。
+   A:資工系的莊永裕老師。我上過他兩門課，分別是數位視覺效果與數位影像生成。那時候就啟發了我對 computer graphics 這個領域的興趣，想深入瞭解做特效、動畫背後的原理是什麼。
 
    (Q. 那如果講電機系比較喜歡的老師呢?)
 

@@ -1,9 +1,12 @@
 ---
 # 這裡是frontmatter
 title: '楊奕軒教授訪談'
-path: 'yi-xuan-yang' # 實際的網址，在gatsby-node.js用到
+path: 'yi-hsuan-yang' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2018-09-10' # 文章發布時間
 ---
+
+<!-- https://www.facebook.com/notes/ntuee-plus/%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA2006%E7%B4%9A-%E6%A5%8A%E5%A5%95%E8%BB%92-%E7%A0%94%E7%A9%B6%E5%93%A1%E6%95%99%E6%8E%88-%E4%B8%AD%E7%A0%94%E9%99%A2%E8%B3%87%E5%89%B5%E4%B8%AD%E5%BF%83/1478630082240676/ -->
 
 # 楊奕軒教授訪談
 

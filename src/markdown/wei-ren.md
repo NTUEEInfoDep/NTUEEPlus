@@ -1,9 +1,14 @@
 ---
 # 這裡是frontmatter
-title: '梁維仁'
+title: '【系友專訪】1992級 梁維仁（元大證券香港區總經理、花旗環球證券臺灣區總經理）'
 path: 'wei-ren' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2017-05-12' # 文章發布時間
 ---
+
+<!-- https://www.facebook.com/notes/710398462397179/%E3%80%90%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA%E3%80%911992%E7%B4%9A%20%E6%A2%81%E7%B6%AD%E4%BB%81%EF%BC%88%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8%E9%A6%99%E6%B8%AF%E5%8D%80%E7%B8%BD%E7%B6%93%E7%90%86%E3%80%81%E8%8A%B1%E6%97%97%E7%92%B0%E7%90%83%E8%AD%89%E5%88%B8%E8%87%BA%E7%81%A3%E5%8D%80%E7%B8%BD%E7%B6%93%E7%90%86%EF%BC%89/995372033899819/ -->
+
+# 【系友專訪】1992 級 梁維仁（元大證券香港區總經理、花旗環球證券臺灣區總經理）
 
 <!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->
 <!-- children1不能用markdown，但可以用html tag -->
