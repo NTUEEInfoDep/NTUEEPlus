@@ -15,14 +15,14 @@
 
     h2 {
       // 下拉選單的標題
-      min-width: 45vw; // TODO 寬度太小會爆掉
-      white-space: nowrap;
+      display: table; //據說會根據content內容得到width，不會像inline-block一樣讓後面的東西跟標題inline
       text-align: left;
       margin-top: 6.4rem;
       margin-bottom: 3.5rem;
       padding-top: 1%;
       padding-bottom: 1%;
       padding-left: 5%;
+      padding-right: 2%; // 根據width的2%在標題後面補色塊
       font-size: 2rem;
       letter-spacing: 0.2rem;
       color: white;
@@ -41,8 +41,10 @@
 
     ol {
       // 用來裝可折疊的QA
-      padding-left: 15%;
-      padding-right: 15%;
+      @media screen and (min-width: 730px) {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
       ol {
         // 讓可折疊QA裡面可折疊的QA的padding不要太大
         padding-left: 0;
