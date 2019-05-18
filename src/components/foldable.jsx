@@ -17,8 +17,6 @@ class Foldable extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentWillReceiveProps() {}
-
   handleClick() {
     this.setState({ open: !this.state.open });
   }
