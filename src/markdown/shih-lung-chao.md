@@ -1,11 +1,14 @@
 ---
 # 這裡是frontmatter
-title: '高奕豪教授訪談'
-path: 'shi-long-zhao' # 實際的網址，在gatsby-node.js用到
+title: '【人物專訪】-「Zuvio學悅科技」共同創辦人 趙式隆'
+path: 'shih-lung-chao' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2016-07-06'
 ---
 
-# 趙式隆教授訪談
+<!-- https://www.facebook.com/notes/ntuee-plus/%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA2008%E7%B4%9A-%E8%B6%99%E5%BC%8F%E9%9A%86%E5%8F%B0%E7%81%A3%E7%9F%BD%E8%B0%B7%E5%89%B5%E6%A5%AD%E5%AE%B6%E5%8D%94%E6%9C%83%E7%90%86%E4%BA%8B%E9%95%B7/908731632563860 -->
+
+# 【人物專訪】-「Zuvio 學悅科技」共同創辦人 趙式隆
 
 <!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->
 <!-- children1不能用markdown，但可以用html tag -->

@@ -1,8 +1,11 @@
 ---
-title: '胡一天學長訪談'
+title: 'NTUEE+ 專訪 ── 胡一天學長'
 path: 'thomas-hu' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2016-08-29'
 ---
+
+<!-- https://www.facebook.com/notes/710398462397179/%E3%80%90%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA%E3%80%912000%E7%B4%9A%20%E8%83%A1%E4%B8%80%E5%A4%A9%EF%BC%88%E6%BA%90%E9%89%91%E8%B3%87%E6%9C%ACKyber%20Capital%E5%9F%B7%E8%A1%8C%E9%95%B7%EF%BC%8C%E5%B0%88%E6%A5%AD%E6%8A%95%E8%B3%87%E4%BA%BA%E8%88%87%E9%87%91%E8%9E%8D%E8%A7%80%E5%AF%9F%E5%AE%B6%EF%BC%89/947559075347782/ -->
 
 # NTUEE+ 專訪 ── 胡一天學長
 

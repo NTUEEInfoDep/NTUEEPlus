@@ -1,11 +1,14 @@
 ---
 # 這裡是frontmatter
-title: '高奕豪教授訪談'
+title: '【系友專訪】2006級 高奕豪（Quantitative Researcher @Two Sigma Investments）'
 path: 'yi-hao-gao' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
+date: '2016-08-28'
 ---
 
-# 高奕豪教授訪談
+<!-- https://www.facebook.com/notes/710398462397179/%E3%80%90%E7%B3%BB%E5%8F%8B%E5%B0%88%E8%A8%AA%E3%80%912006%E7%B4%9A%20%E9%AB%98%E5%A5%95%E8%B1%AA%EF%BC%88Quantitative%20Researcher%20@Two%20Sigma%20Investments%EF%BC%89/982795965157426/ -->
+
+# 【系友專訪】2006 級 高奕豪（Quantitative Researcher @Two Sigma Investments）
 
 <!-- 用自訂的React component，有些限制，參照gatsby-config.js裡的連結 -->
 <!-- children1不能用markdown，但可以用html tag -->
