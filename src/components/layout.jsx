@@ -34,7 +34,15 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>NTUEE+ © {new Date().getFullYear()}</footer>
+          <footer
+            style={{
+              textAlign: 'center',
+              fontFamily: 'sans-serif',
+              color: '#878787'
+            }}
+          >
+            NTUEE+ © {new Date().getFullYear()}
+          </footer>
         </div>
       </React.Fragment>
     )}
