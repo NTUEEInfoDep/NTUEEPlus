@@ -18,6 +18,8 @@
       min-width: 45vw; // TODO 寬度太小會爆掉
       white-space: nowrap;
       text-align: left;
+      margin-top: 6.4rem;
+      margin-bottom: 3.5rem;
       padding-top: 1%;
       padding-bottom: 1%;
       padding-left: 5%;
@@ -41,6 +43,11 @@
       // 用來裝可折疊的QA
       padding-left: 15%;
       padding-right: 15%;
+      ol {
+        // 讓可折疊QA裡面可折疊的QA的padding不要太大
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
 
     strong {
