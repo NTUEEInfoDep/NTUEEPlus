@@ -20,11 +20,11 @@
     padding-right: 2%;
     @media screen and (min-width: 600px) {
       text-align: left;
-      max-width: 40%;
+      max-width: 45%;
     }
 
     & > p {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 1.3rem;
       line-height: 1.9rem;
       color: #696d7f;
@@ -35,6 +35,7 @@
     & > div {
       display: flex;
       flex-flow: row wrap;
+      align-items: center;
       @media screen and (max-width: 600px) {
         justify-content: center;
       }
