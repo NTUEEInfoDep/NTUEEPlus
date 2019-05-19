@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Preview from '../components/preview';
@@ -14,6 +14,14 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet
+          meta={[
+            {
+              name: 'google-site-verification',
+              content: 'kd6f7vdD3Q81GN8XTMmDzETz_Iz6g8PSXb29EFAAEQA'
+            }
+          ]}
+        />
         <SEO title="Home" keywords={[`ntu`, `NTUEE+`, `ntuee+`]} />
         <div style={{ backgroundColor: '#d1d3d9' }} />
         <div
