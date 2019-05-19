@@ -38,7 +38,8 @@ const Layout = ({ children }) => (
             style={{
               textAlign: 'center',
               fontFamily: 'sans-serif',
-              color: '#878787'
+              color: '#878787',
+              marginTop: '40px'
             }}
           >
             NTUEE+ © {new Date().getFullYear()}

@@ -7,6 +7,30 @@
 // You can delete this file if you're not using it
 const path = require(`path`);
 
+const articlePerPage = 5; // 每次顯示5頁
+function createArticleListPage( //用給定的 component render 出文章列表
+  createPage,
+  numberOfMarkdownPages,
+  pathPrefix,
+  componentPath
+) {
+  const numberOfListingPage = Math.ceil(numberOfMarkdownPages / articlePerPage);
+  for (let i = 1; i <= numberOfListingPage; ++i) {
+    // `i`: 頁數
+    createPage({
+      path: i === 1 ? pathPrefix : `${pathPrefix}/${i}`, // 第一頁網址不用加頁碼
+      component: path.resolve(componentPath),
+      context: {
+        limit: articlePerPage, // 每次query自己這一頁的文章數
+        skip: (i - 1) * articlePerPage, // 跳過之前已經列過的文章
+        numberOfListingPage,
+        currentPage: i,
+        pathPrefix
+      }
+    });
+  }
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return graphql(`
@@ -40,5 +64,12 @@ exports.createPages = ({ graphql, actions }) => {
         }
       });
     });
+
+    createArticleListPage(
+      createPage,
+      result.data.allMarkdownRemark.edges.length,
+      'timeline',
+      'src/templates/articleList.jsx'
+    );
   });
 };

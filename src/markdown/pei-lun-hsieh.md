@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: '【系友專訪】2007級 謝沛倫（Ambidio Inc. 共同創辦人）'
-path: 'pei-lun-hsieh' # 實際的網址，在gatsby-node.js用到
+path: 'article/pei-lun-hsieh' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 date: '2017-04-13' # 文章發布時間
 ---
