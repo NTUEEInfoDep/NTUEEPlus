@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import './preview.scss';
 
 const Preview = props => (
-  <div className="preview-container">
+  <Link to={props.to} className="preview-container">
     <div>
       <h3> {props.data.frontmatter.title} </h3>
       <p>{props.data.frontmatter.quote}</p>
@@ -12,7 +13,7 @@ const Preview = props => (
       alt={props.data.frontmatter.title}
       style={{ height: '180px' }}
     />
-  </div>
+  </Link>
 );
 
 export default Preview;

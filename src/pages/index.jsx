@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -27,9 +27,11 @@ class IndexPage extends React.Component {
         >
           <h1> 精選貼文 </h1>
           {this.markdowns.edges.map((item, i) => (
-            <Link to={`${item.node.frontmatter.path}`} key={i}>
-              <Preview data={item.node} />
-            </Link>
+            <Preview
+              data={item.node}
+              to={`${item.node.frontmatter.path}`}
+              key={i}
+            />
           ))}
         </div>
       </Layout>

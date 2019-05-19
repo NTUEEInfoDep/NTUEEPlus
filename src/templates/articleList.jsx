@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, navigate, graphql } from 'gatsby';
+import { navigate, graphql } from 'gatsby';
 import { Icon, Pagination } from 'semantic-ui-react';
 import Preview from '../components/preview';
 import Layout from '../components/layout';
@@ -18,11 +18,7 @@ export default class ArticleList extends React.Component {
     return (
       <Layout>
         {posts.map(({ node }, index) => {
-          return (
-            <Link to={node.frontmatter.path} key={index}>
-              <Preview data={node} />
-            </Link>
-          );
+          return <Preview data={node} to={node.frontmatter.path} key={index} />;
         })}
         <Pagination
           style={{
