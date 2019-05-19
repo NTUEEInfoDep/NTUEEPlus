@@ -10,7 +10,6 @@ class IndexPage extends React.Component {
     super();
     const markdowns = props.data.allMarkdownRemark;
     this.markdowns = markdowns;
-    console.log(markdowns);
   }
   render() {
     return (
@@ -28,8 +27,8 @@ class IndexPage extends React.Component {
         >
           <h1> 精選貼文 </h1>
           {this.markdowns.edges.map((item, i) => (
-            <Link to={`${item.node.frontmatter.path}`}>
-              <Preview data={item.node} key={i} />
+            <Link to={`${item.node.frontmatter.path}`} key={i}>
+              <Preview data={item.node} />
             </Link>
           ))}
         </div>

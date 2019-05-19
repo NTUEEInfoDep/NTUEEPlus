@@ -18,7 +18,7 @@ function createArticleListPage( //用給定的 component render 出文章列表
   for (let i = 1; i <= numberOfListingPage; ++i) {
     // `i`: 頁數
     createPage({
-      path: i === 1 ? pathPrefix : `${pathPrefix}/${i}`, // 第一頁網址不用加頁碼
+      path: `${pathPrefix}/${i}`,
       component: path.resolve(componentPath),
       context: {
         limit: articlePerPage, // 每次query自己這一頁的文章數

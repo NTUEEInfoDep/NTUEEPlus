@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: '楊奕軒教授訪談'
-path: 'article/yi-hsuan-yang' # 實際的網址，在gatsby-node.js用到
+path: '/article/yi-hsuan-yang' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 quote: '透過這些經歷，我會期待自己用國際級的標準來做研究，而不是當國內王。會想要讓其他國家的學者，聽到你的名字就知道你在做什麼，甚至想到一個研究題目就會想到你的名字'
 date: '2018-09-10' # 文章發布時間

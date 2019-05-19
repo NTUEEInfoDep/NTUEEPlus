@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: '【系友專訪】2006級 高奕豪（Quantitative Researcher @Two Sigma Investments）'
-path: 'article/yi-hao-gao' # 實際的網址，在gatsby-node.js用到
+path: '/article/yi-hao-gao' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 date: '2016-08-28'
 ---

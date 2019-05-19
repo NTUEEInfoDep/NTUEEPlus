@@ -1,6 +1,6 @@
 ---
 title: 'NTUEE+ 專訪 ── 胡一天學長'
-path: 'article/thomas-hu' # 實際的網址，在gatsby-node.js用到
+path: '/article/thomas-hu' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 date: '2016-08-29'
 ---

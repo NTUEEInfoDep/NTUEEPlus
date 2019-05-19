@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: '【系友專訪】1992級 梁維仁（元大證券香港區總經理、花旗環球證券臺灣區總經理）'
-path: 'article/wei-ren' # 實際的網址，在gatsby-node.js用到
+path: '/article/wei-ren' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 date: '2017-05-12' # 文章發布時間
 ---

@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: '【人物專訪】-「Zuvio學悅科技」共同創辦人 趙式隆'
-path: 'article/shih-lung-chao' # 實際的網址，在gatsby-node.js用到
+path: '/article/shih-lung-chao' # 實際的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 date: '2016-07-06'
 ---

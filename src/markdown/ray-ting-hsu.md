@@ -1,7 +1,7 @@
 ---
 # 這裡是frontmatter
 title: 'b80 徐瑞廷採訪 / 破壞規則的能力'
-path: 'article/ray-ting-hsu' # 實際的網址，在gatsby-node.js用到的網址，在gatsby-node.js用到
+path: '/article/ray-ting-hsu' # 實際的網址，在gatsby-node.js用到的網址，在gatsby-node.js用到
 tags: ['#tag1', '#tag2', '測試用的很長的tag']
 quote: '有些特質你們是沒有被測試的，就是破壞規則的能力。放眼望去，那些在科技行業成功的人，每個人都是破壞規則才成功的 。'
 date: '2017-03-13' # 文章發布時煙

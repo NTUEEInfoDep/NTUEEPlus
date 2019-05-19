@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link, navigate, graphql } from 'gatsby';
+import { Icon, Pagination } from 'semantic-ui-react';
 import Preview from '../components/preview';
-import Header from '../components/header';
+import Layout from '../components/layout';
+
+import './menu.css';
+import './icon.css';
 
 export default class ArticleList extends React.Component {
   render() {
@@ -10,40 +14,52 @@ export default class ArticleList extends React.Component {
       numberOfListingPage,
       pathPrefix
     } = this.props.pageContext;
-    const isFirst = currentPage === 1;
-    const isLast = currentPage === numberOfListingPage;
-    const prevPage =
-      currentPage - 1 === 1 ? pathPrefix : `${pathPrefix}/${currentPage - 1}`;
     const posts = this.props.data.allMarkdownRemark.edges;
     return (
-      <React.Fragment>
-        <Header />
-        {posts.map(({ node }) => {
+      <Layout>
+        {posts.map(({ node }, index) => {
           return (
-            <Link to={node.frontmatter.path}>
+            <Link to={node.frontmatter.path} key={index}>
               <Preview data={node} />
             </Link>
           );
         })}
-        {!isFirst && (
-          <Link to={prevPage} rel="prev">
-            ← Previous Page
-          </Link>
-        )}
-        {Array.from({ length: numberOfListingPage }, (_, i) => (
-          <Link
-            key={`pagination-number${i + 1}`}
-            to={`${pathPrefix}/${i === 0 ? '' : i + 1}`}
-          >
-            {i + 1}
-          </Link>
-        ))}
-        {!isLast && (
-          <Link to={`${pathPrefix}/${currentPage + 1}`} rel="next">
-            Next Page →
-          </Link>
-        )}
-      </React.Fragment>
+        <Pagination
+          style={{
+            position: 'absolute',
+            transform: 'translateX(-50%)',
+            left: '50%'
+          }}
+          onPageChange={(_, prevProps) =>
+            navigate(`${pathPrefix}/${prevProps.activePage}`)
+          }
+          activePage={currentPage}
+          ellipsisItem={{
+            content: <Icon name="ellipsis horizontal" />,
+            icon: true,
+            disabled: true
+          }}
+          firstItem={{
+            content: <Icon name="angle double left" />,
+            icon: true
+          }}
+          lastItem={{
+            content: <Icon name="angle double right" />,
+            icon: true
+          }}
+          prevItem={{
+            content: <Icon name="angle left" />,
+            icon: true,
+            disabled: currentPage === 1
+          }}
+          nextItem={{
+            content: <Icon name="angle right" />,
+            icon: true,
+            disabled: currentPage === numberOfListingPage
+          }}
+          totalPages={numberOfListingPage}
+        />
+      </Layout>
     );
   }
 }
