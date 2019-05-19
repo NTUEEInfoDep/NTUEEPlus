@@ -17,44 +17,56 @@ export default class ArticleList extends React.Component {
     const posts = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        {posts.map(({ node }, index) => {
-          return <Preview data={node} to={node.frontmatter.path} key={index} />;
-        })}
-        <Pagination
+        <div
           style={{
-            position: 'absolute',
-            transform: 'translateX(-50%)',
-            left: '50%'
+            margin: '0 auto',
+            width: '80%',
+            padding: '20px',
+            color: 'rgb(14, 35, 69)'
           }}
-          onPageChange={(_, prevProps) =>
-            navigate(`${pathPrefix}/${prevProps.activePage}`)
-          }
-          activePage={currentPage}
-          ellipsisItem={{
-            content: <Icon name="ellipsis horizontal" />,
-            icon: true,
-            disabled: true
-          }}
-          firstItem={{
-            content: <Icon name="angle double left" />,
-            icon: true
-          }}
-          lastItem={{
-            content: <Icon name="angle double right" />,
-            icon: true
-          }}
-          prevItem={{
-            content: <Icon name="angle left" />,
-            icon: true,
-            disabled: currentPage === 1
-          }}
-          nextItem={{
-            content: <Icon name="angle right" />,
-            icon: true,
-            disabled: currentPage === numberOfListingPage
-          }}
-          totalPages={numberOfListingPage}
-        />
+        >
+          <h1> 時間軸 </h1>
+          {posts.map(({ node }, index) => {
+            return (
+              <Preview data={node} to={node.frontmatter.path} key={index} />
+            );
+          })}
+          <Pagination
+            style={{
+              position: 'absolute',
+              transform: 'translateX(-50%)',
+              left: '50%'
+            }}
+            onPageChange={(_, prevProps) =>
+              navigate(`${pathPrefix}/${prevProps.activePage}`)
+            }
+            activePage={currentPage}
+            ellipsisItem={{
+              content: <Icon name="ellipsis horizontal" />,
+              icon: true,
+              disabled: true
+            }}
+            firstItem={{
+              content: <Icon name="angle double left" />,
+              icon: true
+            }}
+            lastItem={{
+              content: <Icon name="angle double right" />,
+              icon: true
+            }}
+            prevItem={{
+              content: <Icon name="angle left" />,
+              icon: true,
+              disabled: currentPage === 1
+            }}
+            nextItem={{
+              content: <Icon name="angle right" />,
+              icon: true,
+              disabled: currentPage === numberOfListingPage
+            }}
+            totalPages={numberOfListingPage}
+          />
+        </div>
       </Layout>
     );
   }

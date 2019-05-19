@@ -29,7 +29,6 @@ class IndexPage extends React.Component {
             margin: '0 auto',
             width: '80%',
             padding: '20px',
-            backgroundColor: 'rgb(228, 228, 228)',
             color: 'rgb(14, 35, 69)'
           }}
         >

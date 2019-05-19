@@ -28,18 +28,20 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `auto`,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0
+            margin: `auto`
           }}
         >
-          <main>{children}</main>
+          <main style={{ backgroundColor: '#ebecee', padding: '3.5rem 0' }}>
+            {children}
+          </main>
           <footer
             style={{
               textAlign: 'center',
               fontFamily: 'sans-serif',
-              color: '#878787',
-              marginTop: '40px'
+              background: `#0f2345`,
+              color: 'rgb(209, 214, 222)',
+              paddingTop: '20px',
+              paddingBottom: '32px'
             }}
           >
             NTUEE+ © {new Date().getFullYear()}
