@@ -26,13 +26,11 @@ class IndexPage extends React.Component {
         <div style={{ backgroundColor: '#d1d3d9' }} />
         <div
           style={{
-            margin: '0 auto',
-            width: '80%',
             padding: '20px',
             color: 'rgb(14, 35, 69)'
           }}
         >
-          <h1> 精選貼文 </h1>
+          <h1 style={{ margin: '0 auto', width: '80%' }}> 精選貼文 </h1>
           {this.markdowns.edges.map((item, i) => (
             <Preview
               data={item.node}

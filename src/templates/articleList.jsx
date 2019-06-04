@@ -20,7 +20,6 @@ export default class ArticleList extends React.Component {
         <div
           style={{
             margin: '0 auto',
-            width: '80%',
             padding: '20px',
             color: 'rgb(14, 35, 69)'
           }}
